@@ -30,6 +30,7 @@
 
     <FrameLayout
             android:layout_marginBottom="50dp"
+            android:layout_marginTop="50dp"
             android:layout_gravity="bottom"
             android:layout_width="match_parent" android:layout_height="match_parent">
 
@@ -46,14 +47,14 @@
 
         <Button
                 android:id="@+id/loginButton"
-                android:background="@color/md_blue_grey_50"
-                android:textColor="@color/md_grey_800"
-                android:textSize="@dimen/med_text"
+                android:textColor="@color/md_blue_grey_50"
+                android:background="@color/md_grey_800"
+                android:textSize="@dimen/small_text"
                 android:layout_margin="20dp"
-                android:paddingTop="10dp"
-                android:paddingBottom="10dp"
-                android:paddingStart="20dp"
-                android:paddingEnd="20dp"
+                android:paddingTop="12dp"
+                android:paddingBottom="12dp"
+                android:paddingStart="22dp"
+                android:paddingEnd="22dp"
                 android:gravity="center"
                 android:layout_gravity="center"
                 android:text="@string/login"

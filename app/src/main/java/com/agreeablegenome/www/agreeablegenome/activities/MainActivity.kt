@@ -3,6 +3,7 @@ package com.agreeablegenome.www.agreeablegenome.activities
 import android.content.Intent
 import android.os.Bundle
 import android.support.design.widget.NavigationView
+import android.support.v4.app.Fragment
 import android.support.v4.view.GravityCompat
 import android.support.v7.app.ActionBarDrawerToggle
 import android.support.v7.app.AppCompatActivity
@@ -18,7 +19,9 @@ import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.app_bar_main.*
 import javax.inject.Inject
 import com.afollestad.materialdialogs.MaterialDialog
-import com.agreeablegenome.www.agreeablegenome.R.id.*
+import com.agreeablegenome.www.agreeablegenome.fragments.FavoritesFragment
+import com.agreeablegenome.www.agreeablegenome.fragments.GenomeFragment
+import com.agreeablegenome.www.agreeablegenome.fragments.RecipeFragment
 
 
 class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
@@ -33,6 +36,8 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         GenomeApplication.injectionComponent.inject(this)
         setContentView(R.layout.activity_main)
         setSupportActionBar(toolbar)
+
+        replaceFragment(RecipeFragment(), getString(R.string.daily_recipe))
 
         if (isFirstLogin()) {
             showInfoDialog()
@@ -106,25 +111,33 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         when (item.itemId) {
             R.id.nav_recipes -> {
                 // Handle the camera action
+                replaceFragment(RecipeFragment(), getString(R.string.daily_recipe))
             }
             R.id.nav_favorites -> {
-
+                replaceFragment(FavoritesFragment(), getString(R.string.favorites))
             }
             R.id.nav_genome -> {
-
-            }
-            R.id.nav_tips -> {
-
+                replaceFragment(GenomeFragment(), getString(R.string.your_genome))
             }
             R.id.nav_share -> {
-
+                // TODO: implement
+                Toast.makeText(applicationContext, getString(R.string.coming_soon), Toast.LENGTH_SHORT).show()
             }
             R.id.nav_settings -> {
-
+                // TODO: implement
+                Toast.makeText(applicationContext, getString(R.string.coming_soon), Toast.LENGTH_SHORT).show()
             }
         }
 
         drawer_layout.closeDrawer(GravityCompat.START)
         return true
+    }
+
+    private fun replaceFragment(fragment: Fragment, fragmentTitle: String) {
+        val transaction = supportFragmentManager.beginTransaction()
+        transaction.replace(R.id.container, fragment)
+        transaction.addToBackStack(null)
+        setTitle(fragmentTitle)
+        transaction.commit()
     }
 }

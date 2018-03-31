@@ -7,20 +7,16 @@
         <item
                 android:id="@+id/nav_recipes"
                 android:icon="@drawable/zzz_food_fork_drink"
-                android:title="Import"/>
+                android:title="@string/daily_recipe"/>
         <item
                 android:id="@+id/nav_favorites"
                 android:icon="@drawable/zzz_star"
-                android:title="Favorites"/>
+                android:title="@string/favorites"/>
 
-        <item
-                android:id="@+id/nav_tips"
-                android:icon="@drawable/zzz_information"
-                android:title="Tools"/>
         <item
                 android:id="@+id/nav_genome"
                 android:icon="@drawable/zzz_bulletin_board"
-                android:title="Your Genome"/>
+                android:title="@string/your_genome"/>
     </group>
 
     <item android:title="Communicate">
@@ -28,11 +24,11 @@
             <item
                     android:id="@+id/nav_settings"
                     android:icon="@drawable/zzz_settings"
-                    android:title="Settings"/>
+                    android:title="@string/settings"/>
             <item
                     android:id="@+id/nav_share"
                     android:icon="@drawable/ic_menu_share"
-                    android:title="Share"/>
+                    android:title="@string/share"/>
         </menu>
     </item>
 

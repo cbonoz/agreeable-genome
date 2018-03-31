@@ -28,7 +28,6 @@ class LoginActivity : Activity() {
         setContentView(R.layout.activity_login)
         GenomeApplication.injectionComponent.inject(this)
 
-
         mSpark = Spark.Builder()
                 .setView(loginLayout) // View or view group
                 .setDuration(5000)
