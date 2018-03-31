@@ -93,7 +93,7 @@ class RecipeFragment : Fragment() {
 
                     genomeText.text = "Retrieved for Genome: ${displayName}\nYour Rating ${score}: ${text}"
 
-                    // TODO: get recipe using the given report property as a param.
+                    // TODO: get recipe using the given report property as a param and factor in the score.
                     genomeService.getRecipeUrl(displayName).httpGet().responseString { _, _, recipeResult ->
                         when (recipeResult) {
                             is Result.Failure -> {
