@@ -29,6 +29,23 @@ https://docs.google.com/presentation/d/16EUqJsdWubQcpF0FHXg9JK_0yrnByLmPfOG61lP3
 
 ### Screenshots
 
+<div style="text-align:center">
+    <h3>Login Page</h3>
+        <img src="./assets/login.png" style="margin: 0 auto"/>
+    <h3>Loading...</h3>
+        <img src="./assets/login_loading.png" style="margin: 0 auto"/>
+    <h3>Welcome Dialog</h3>
+        <img src="./assets/welcome.png" style="margin: 0 auto"/>
+    <h3>Main Recipe Page</h3>
+        <img src="./assets/recipe.png" style="margin: 0 auto"/>
+    <h3>Basic Recipe Info Page</h3>
+        <img src="./assets/recipe_detail.png" style="margin: 0 auto"/>
+    <h3>Favorites</h3>
+        <img src="./assets/favorites.png" style="margin: 0 auto"/>
+    <h3>Your Genome History</h3>
+        <img src="./assets/history.png" style="margin: 0 auto"/>
+</div>
+
 ### Next Work
 
 * Set up scheduled push notifications for recipes.
