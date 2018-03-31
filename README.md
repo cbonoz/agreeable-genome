@@ -11,6 +11,8 @@ Agreeable Genome is a daily recipe app that recommends daily meals and health ti
 
 Created for the GENOME LINK API Devpost challenge.
 
+Uses EdaMum Recipe API to fetch recipes corresponding to particular user GenomeLink report data.
+
 ### What's the Problem
 
 ‘All standardized diets specify what you should eat based upon the average human metabolism, but as we know from the science of the individual, there is no such thing as average metabolism, any more than there is an average body, average brain, or average genome. Instead, the way each of our bodies processes food is completely individualized--and demands a completely individualized diet’ (1)
