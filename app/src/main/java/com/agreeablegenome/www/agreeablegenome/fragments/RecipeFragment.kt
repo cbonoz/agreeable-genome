@@ -133,7 +133,7 @@ class RecipeFragment : Fragment() {
 
         val fullDescription = StringBuilder()
         for (key in recipe.keys) {
-            val value = recipe.get(key) as String
+            val value = recipe.get(key).toString()
             if (!value.contains("www")) {
                 fullDescription.append(key).append(": ").append(value).append("\n")
             }
@@ -144,14 +144,13 @@ class RecipeFragment : Fragment() {
                 .into(recipeImage);
 
         recipeImage.setOnClickListener {
-            if (activity != null)
-                MaterialDialog.Builder(activity!!.applicationContext)
-                        .title("Today's Recipe")
-                        .content(fullDescription.toString())
-                        .positiveText("I made this")
-                        .negativeText("Skip")
-                        .icon(resources.getDrawable(R.drawable.zzz_food))
-                        .show()
+            MaterialDialog.Builder(this@RecipeFragment.context!!)
+                    .title("Today's Recipe")
+                    .content(fullDescription.toString())
+                    .positiveText("I made this")
+                    .negativeText("Skip")
+                    .icon(resources.getDrawable(R.drawable.zzz_food))
+                    .show()
         }
     }
 
