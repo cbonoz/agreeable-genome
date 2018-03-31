@@ -15,6 +15,7 @@ Created for the GENOME LINK API Devpost challenge.
 
 ‘All standardized diets specify what you should eat based upon the average human metabolism, but as we know from the science of the individual, there is no such thing as average metabolism, any more than there is an average body, average brain, or average genome. Instead, the way each of our bodies processes food is completely individualized--and demands a completely individualized diet’ (1)
 
+
 Still somewhat early in the lifetime for genome-based web and mobile apps - sequencing the full human genome is still cost
 prohibitive and/or not of proven interest to folks, so it may be some time before such applications have mainstream application.
 
@@ -22,6 +23,7 @@ Agreeable Genome is a venture into this domain, by seeking to create a platform 
 while simulatenously be recommended smarter food choices and health tips which are communicated and tracked within the mobile
 application.
 
+(1) https://www.psychologytoday.com/us/blog/the-science-the-individual/201601/why-you-should-ignore-standardized-dietary-recommendations
 ###
 
 For more information, see the Pitch Deck:
@@ -56,7 +58,7 @@ tips/recipes.
 ### Dev Notes
 
 * To set up, will need to modify the following block in your build.gradle with API credentials from
-<a href="https://www.edamam.com/">https://www.edamam.com/</a>
+<a href="https://www.edamam.com/">https://www.edamam.com/</a> in order to fetch recipe information and images for the demo.
 <pre>
 debug {
             buildConfigField 'String', "EdamamApiKey", Edamam_ApiKey
