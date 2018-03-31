@@ -74,7 +74,7 @@ class RecipeFragment : Fragment() {
                 is Result.Failure -> {
                     val ex = genomeResult.getException()
                     Toast.makeText(activity, ex.localizedMessage, Toast.LENGTH_SHORT).show()
-                    loading = false
+                    setLoading(false)
                 }
                 is Result.Success -> {
                     val data = genomeResult.get()
@@ -96,12 +96,12 @@ class RecipeFragment : Fragment() {
                             is Result.Failure -> {
                                 val ex = recipeResult.getException()
                                 Toast.makeText(activity, ex.localizedMessage, Toast.LENGTH_SHORT).show()
-                                loading = false
+                                setLoading(false)
                             }
                             is Result.Success -> {
                                 val recipeData = recipeResult.get()
                                 Log.d("recipe", recipeData)
-                                loading = false
+                                setLoading(false)
                                 renderImageIntoView(recipeData)
                             }
                         }
@@ -127,13 +127,13 @@ class RecipeFragment : Fragment() {
         val recipeImageUrl = recipe.string("image")
         val description = StringBuilder()
         description.append(recipe.string("label")).append("\n")
-        description.append(recipe.string("source")).append("\n")
+        description.append("Source: ").append(recipe.string("source")).append("\n")
         description.append("Calories: ").append(recipe.float("Calories")).append("\n")
         recipeText.text = description.toString()
 
         val fullDescription = StringBuilder()
         for (key in recipe.keys) {
-            val value = recipe.get("key") as String
+            val value = recipe.get(key) as String
             if (!value.contains("www")) {
                 fullDescription.append(key).append(": ").append(value).append("\n")
             }

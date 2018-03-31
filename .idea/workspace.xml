@@ -6,26 +6,12 @@
     </shared>
   </component>
   <component name="AndroidLogFilters">
-    <option name="TOOL_WINDOW_LOG_LEVEL" value="verbose" />
+    <option name="TOOL_WINDOW_LOG_LEVEL" value="error" />
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="806f0c0a-d9b0-42d3-9723-fa3c174c3a90" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_github_PhilJay_MPAndroidChart_v3_0_3_jar.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/app/build.gradle" afterPath="$PROJECT_DIR$/app/build.gradle" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/agreeablegenome/www/agreeablegenome/activities/LoginActivity.kt" afterPath="$PROJECT_DIR$/app/src/main/java/com/agreeablegenome/www/agreeablegenome/activities/LoginActivity.kt" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/agreeablegenome/www/agreeablegenome/activities/MainActivity.kt" afterPath="$PROJECT_DIR$/app/src/main/java/com/agreeablegenome/www/agreeablegenome/activities/MainActivity.kt" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/agreeablegenome/www/agreeablegenome/fragments/GenomeFragment.kt" afterPath="$PROJECT_DIR$/app/src/main/java/com/agreeablegenome/www/agreeablegenome/fragments/GenomeFragment.kt" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/agreeablegenome/www/agreeablegenome/fragments/RecipeFragment.kt" afterPath="$PROJECT_DIR$/app/src/main/java/com/agreeablegenome/www/agreeablegenome/fragments/RecipeFragment.kt" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/agreeablegenome/www/agreeablegenome/util/GenomeService.kt" afterPath="$PROJECT_DIR$/app/src/main/java/com/agreeablegenome/www/agreeablegenome/util/GenomeService.kt" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/content_main.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/content_main.xml" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_genome.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_genome.xml" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_recipe.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_recipe.xml" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/menu/activity_main_drawer.xml" afterPath="$PROJECT_DIR$/app/src/main/res/menu/activity_main_drawer.xml" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -73,15 +59,25 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RecipeFragment.kt" pinned="false" current-in-tab="false">
+      <file leaf-file-name="RecipeFragment.kt" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/agreeablegenome/www/agreeablegenome/fragments/RecipeFragment.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="556">
-              <caret line="125" column="0" lean-forward="false" selection-start-line="125" selection-start-column="0" selection-end-line="125" selection-end-column="0" />
+            <state relative-caret-position="-41">
+              <caret line="103" column="0" lean-forward="false" selection-start-line="103" selection-start-column="0" selection-end-line="103" selection-end-column="0" />
               <folding>
                 <element signature="e#60#820#0" expanded="true" />
-                <element signature="e#4828#4863#0" expanded="true" />
+                <element signature="e#4788#4823#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Fragment.java" pinned="false" current-in-tab="false">
+        <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.support/support-fragment/27.0.2/659085cb974e7ec1f25451d23f11578332ea0d7e/support-fragment-27.0.2-sources.jar!/android/support/v4/app/Fragment.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="178">
+              <caret line="2260" column="0" lean-forward="false" selection-start-line="2260" selection-start-column="0" selection-end-line="2260" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -100,11 +96,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SplashActivity.kt" pinned="false" current-in-tab="true">
+      <file leaf-file-name="SplashActivity.kt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/agreeablegenome/www/agreeablegenome/activities/SplashActivity.kt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="245">
-              <caret line="49" column="54" lean-forward="false" selection-start-line="49" selection-start-column="54" selection-end-line="49" selection-end-column="54" />
+              <caret line="49" column="66" lean-forward="false" selection-start-line="49" selection-start-column="66" selection-end-line="49" selection-end-column="66" />
               <folding />
             </state>
           </provider>
@@ -131,16 +127,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="224">
               <caret line="54" column="4" lean-forward="false" selection-start-line="54" selection-start-column="4" selection-end-line="54" selection-end-column="4" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/build.gradle">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="43" column="0" lean-forward="false" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -2394,7 +2380,6 @@
         <option value="$PROJECT_DIR$/app/src/main/res/menu/activity_main_drawer.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/agreeablegenome/www/agreeablegenome/injection/InjectionComponent.kt" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/agreeablegenome/www/agreeablegenome/activities/SplashActivity.kt" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_login.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/agreeablegenome/www/agreeablegenome/util/User.kt" />
@@ -2416,6 +2401,7 @@
         <option value="$PROJECT_DIR$/app/build.gradle" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/agreeablegenome/www/agreeablegenome/util/GenomeService.kt" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_recipe.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/agreeablegenome/www/agreeablegenome/activities/SplashActivity.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/agreeablegenome/www/agreeablegenome/fragments/RecipeFragment.kt" />
       </list>
     </option>
@@ -2826,7 +2812,7 @@
       <window_info id="Android Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Logcat" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3290735" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Logcat" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3290735" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290735" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -2842,7 +2828,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26517573" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.185836" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.185836" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290735" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Fabric" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -2870,43 +2856,13 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/agreeablegenome/www/agreeablegenome/fragments/RecipeFragment.kt</url>
-          <line>74</line>
-          <properties />
-          <option name="timeStamp" value="9" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/agreeablegenome/www/agreeablegenome/fragments/RecipeFragment.kt</url>
-          <line>71</line>
-          <properties />
-          <option name="timeStamp" value="11" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/agreeablegenome/www/agreeablegenome/fragments/RecipeFragment.kt</url>
-          <line>80</line>
-          <properties />
-          <option name="timeStamp" value="12" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/agreeablegenome/www/agreeablegenome/fragments/RecipeFragment.kt</url>
-          <line>127</line>
-          <properties />
-          <option name="timeStamp" value="14" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/agreeablegenome/www/agreeablegenome/fragments/RecipeFragment.kt</url>
-          <line>90</line>
-          <properties />
-          <option name="timeStamp" value="15" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/agreeablegenome/www/agreeablegenome/fragments/RecipeFragment.kt</url>
           <line>97</line>
           <properties />
           <option name="timeStamp" value="16" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/agreeablegenome/www/agreeablegenome/fragments/RecipeFragment.kt</url>
-          <line>146</line>
+          <line>145</line>
           <properties />
           <option name="timeStamp" value="17" />
         </line-breakpoint>
@@ -2918,12 +2874,12 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/agreeablegenome/www/agreeablegenome/fragments/RecipeFragment.kt</url>
-          <line>125</line>
+          <line>134</line>
           <properties />
-          <option name="timeStamp" value="19" />
+          <option name="timeStamp" value="20" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="20" />
+      <option name="time" value="23" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -3087,14 +3043,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
           <caret line="20" column="8" lean-forward="false" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.support/support-fragment/27.0.2/659085cb974e7ec1f25451d23f11578332ea0d7e/support-fragment-27.0.2-sources.jar!/android/support/v4/app/Fragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="76" column="13" lean-forward="false" selection-start-line="76" selection-start-column="13" selection-end-line="76" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3331,9 +3279,9 @@
         <state relative-caret-position="100">
           <caret line="18" column="13" lean-forward="false" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1281#1282#0" expanded="true" />
-            <element signature="e#1354#1355#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#1281#1282#0" expanded="false" />
+            <element signature="e#1354#1355#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -3343,7 +3291,7 @@
         <state relative-caret-position="381">
           <caret line="31" column="58" lean-forward="false" selection-start-line="31" selection-start-column="58" selection-end-line="31" selection-end-column="58" />
           <folding>
-            <element signature="e#60#913#0" expanded="true" />
+            <element signature="e#60#913#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -3409,17 +3357,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/agreeablegenome/www/agreeablegenome/fragments/RecipeFragment.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="556">
-          <caret line="125" column="0" lean-forward="false" selection-start-line="125" selection-start-column="0" selection-end-line="125" selection-end-column="0" />
-          <folding>
-            <element signature="e#60#820#0" expanded="true" />
-            <element signature="e#4828#4863#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/genome_logo_white_trans.png">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -3433,8 +3370,27 @@
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/agreeablegenome/www/agreeablegenome/activities/SplashActivity.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="245">
-          <caret line="49" column="54" lean-forward="false" selection-start-line="49" selection-start-column="54" selection-end-line="49" selection-end-column="54" />
+          <caret line="49" column="66" lean-forward="false" selection-start-line="49" selection-start-column="66" selection-end-line="49" selection-end-column="66" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.support/support-fragment/27.0.2/659085cb974e7ec1f25451d23f11578332ea0d7e/support-fragment-27.0.2-sources.jar!/android/support/v4/app/Fragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="178">
+          <caret line="2260" column="0" lean-forward="false" selection-start-line="2260" selection-start-column="0" selection-end-line="2260" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/agreeablegenome/www/agreeablegenome/fragments/RecipeFragment.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-41">
+          <caret line="103" column="0" lean-forward="false" selection-start-line="103" selection-start-column="0" selection-end-line="103" selection-end-column="0" />
+          <folding>
+            <element signature="e#60#820#0" expanded="true" />
+            <element signature="e#4788#4823#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
