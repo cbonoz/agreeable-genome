@@ -76,7 +76,7 @@ class GenomeFragment : Fragment() {
         xAxis.xOffset = 0f
         xAxis.valueFormatter = object : IAxisValueFormatter {
 
-            private val mActivities = arrayOf("Protein", "Carbohydrates", "Vegetables", "Pasta", "Pizza")
+            private val mActivities = arrayOf("Protein", "Carbohydrates", "Vegetables", "Pasta", "Vitamin D")
 
             override fun getFormattedValue(value: Float, axis: AxisBase): String {
                 return mActivities[value.toInt() % mActivities.size]

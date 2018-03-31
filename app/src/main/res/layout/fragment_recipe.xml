@@ -12,17 +12,27 @@
             android:fontFamily="cursive"
             android:gravity="center"
             android:textSize="@dimen/large_text"
-            android:padding="20dp"
+            android:padding="15dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/todays_recipe"/>
 
 
     <View
-            android:layout_margin="20dp"
+            android:layout_margin="10dp"
             android:layout_width="fill_parent"
             android:layout_height="2dip"
             android:background="@color/primary"/>
+
+    <TextView
+            android:id="@+id/recipeTitle"
+            android:gravity="center"
+            android:textSize="@dimen/small_text"
+            android:textStyle="bold"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:text=""
+            android:layout_height="wrap_content"/>
 
     <FrameLayout
             android:layout_gravity="center"
@@ -43,8 +53,11 @@
                 android:id="@+id/recipeImage"
                 android:contentDescription="@string/todays_recipe"
                 android:layout_gravity="center"
-                android:layout_width="300dp"
-                android:layout_height="300dp"/>
+                android:background="@color/md_grey_700"
+                android:padding="2dp"
+                android:cropToPadding="true"
+                android:layout_width="302dp"
+                android:layout_height="302dp"/>
 
     </FrameLayout>
 
@@ -52,8 +65,8 @@
     <TextView
             android:id="@+id/recipeText"
             android:gravity="center"
+            android:layout_margin="4dp"
             android:textSize="@dimen/small_text"
-            android:padding="20dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text=""/>
@@ -61,9 +74,9 @@
 
     <TextView
             android:id="@+id/genomeText"
+            android:layout_margin="4dp"
             android:gravity="center"
             android:textSize="@dimen/small_text"
-            android:padding="20dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text=""/>

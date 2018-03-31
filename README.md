@@ -1,5 +1,7 @@
 
-<img src="./app/src/main/res/drawable/genome_logo_trans.png" style="margin: 0 auto"/>
+<div style="text-align:center">
+    <img src="./app/src/main/res/drawable/genome_logo_green.png" style="margin: 0 auto"/>
+</div>
 
 Agreeable Genome
 ---

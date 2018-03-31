@@ -47,7 +47,7 @@ class SplashActivity : AwesomeSplash() {
         //Choose LOGO OR PATH; if you don't provide String value for path it's logo by default
 
         //Customize Logo
-        configSplash.logoSplash = R.drawable.genome_logo_trans_225
+        configSplash.logoSplash = R.drawable.genome_logo_trans_170
         configSplash.animLogoSplashDuration = duration //int ms
         configSplash.animLogoSplashTechnique = Techniques.FadeIn //choose one form Techniques (ref: https://github.com/daimajia/AndroidViewAnimations)
 

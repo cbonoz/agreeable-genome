@@ -34,6 +34,7 @@ class RecipeFragment : Fragment() {
     lateinit var recipeSpinner: SpinKitView
     lateinit var recipeImage: ImageView
     lateinit var recipeText: TextView
+    lateinit var recipeTitle: TextView
     lateinit var genomeText: TextView
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
@@ -45,6 +46,7 @@ class RecipeFragment : Fragment() {
         recipeSpinner = view.findViewById(R.id.recipeSpinner)
         recipeImage = view.findViewById(R.id.recipeImage)
         recipeText = view.findViewById(R.id.recipeText)
+        recipeTitle = view.findViewById(R.id.recipeTitle)
         genomeText = view.findViewById(R.id.genomeText)
 
         getTodaysRecipe()
@@ -89,7 +91,7 @@ class RecipeFragment : Fragment() {
 
                     val displayName = json.obj("phenotype")?.string("display_name")
 
-                    genomeText.text = "${displayName}\nRating ${score}: ${text}"
+                    genomeText.text = "Retrieved for Genome: ${displayName}\nYour Rating ${score}: ${text}"
 
                     // TODO: get recipe using the given report property as a param.
                     genomeService.getRecipeUrl(displayName).httpGet().responseString { _, _, recipeResult ->
@@ -127,14 +129,14 @@ class RecipeFragment : Fragment() {
 
         val recipeImageUrl = recipe.string("image")
         val description = StringBuilder()
-        val recipeTitle = recipe.string("label")
-        description.append(recipeTitle).append("\n")
+        val recipeLabel = recipe.string("label")
+        recipeTitle.text = recipeLabel
         description.append("Source: ").append(recipe.string("source")).append("\n")
-        description.append("Calories: ").append(recipe.float("Calories")).append("\n")
+//        description.append("Calories: ").append(recipe.float("Calories")).append("\n")
         recipeText.text = description.toString()
 
         val dialogRecipeDescription = StringBuilder()
-        for (key in recipe.keys) {
+        for (key in recipe.keys.filter { !it.contains("Daily") && !it.contains("Nutrients") }) {
             val value = recipe.get(key).toString()
             // Filter out urls and data arrays.
             if (!value.contains("www") && !value.contains("Array")) {
@@ -150,13 +152,14 @@ class RecipeFragment : Fragment() {
         recipeImage.setOnClickListener {
             val context = this@RecipeFragment.context!!
             MaterialDialog.Builder(context)
-                    .title("Recipe: ${recipeTitle}")
+                    .title("${recipeLabel}")
                     .content(dialogRecipeDescription.toString())
                     .positiveText("I made this")
                     .onPositive { dialog, which ->
                         Toast.makeText(context, "Recorded Meal", Toast.LENGTH_SHORT).show()
                     }
-                    .icon(resources.getDrawable(R.drawable.zzz_food))
+                    .negativeText("Cancel")
+                    // .icon(resources.getDrawable(R.drawable.zzz_food))
                     .show()
         }
     }

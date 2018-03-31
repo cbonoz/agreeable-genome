@@ -10,11 +10,8 @@
         tools:showIn="@layout/app_bar_main"
         tools:context=".activities.MainActivity">
 
-    <ScrollView
-            android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <ScrollView android:layout_width="match_parent" android:layout_height="wrap_content">
 
-
-        <!--50dp margin for header space-->
         <FrameLayout
                 xmlns:android="http://schemas.android.com/apk/res/android"
                 android:id="@+id/container"

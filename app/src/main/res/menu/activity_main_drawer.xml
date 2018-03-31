@@ -17,14 +17,17 @@
                 android:id="@+id/nav_genome"
                 android:icon="@drawable/zzz_bulletin_board"
                 android:title="@string/your_genome"/>
+
     </group>
 
     <item android:title="Communicate">
         <menu>
+
             <item
                     android:id="@+id/nav_settings"
                     android:icon="@drawable/zzz_settings"
                     android:title="@string/settings"/>
+
             <item
                     android:id="@+id/nav_share"
                     android:icon="@drawable/ic_menu_share"
