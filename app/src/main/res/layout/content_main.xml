@@ -1,21 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
-        android:orientation="vertical"
         xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
         xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:layout_behavior="@string/appbar_scrolling_view_behavior"
         tools:showIn="@layout/app_bar_main"
         tools:context=".activities.MainActivity">
 
+    <ScrollView
+            android:layout_width="wrap_content" android:layout_height="wrap_content">
 
-    <!--50dp margin for header space-->
-    <FrameLayout
-            xmlns:android="http://schemas.android.com/apk/res/android"
-            android:id="@+id/container"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"/>
+
+        <!--50dp margin for header space-->
+        <FrameLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+    </ScrollView>
 
 </LinearLayout>

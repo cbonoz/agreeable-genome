@@ -36,8 +36,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         GenomeApplication.injectionComponent.inject(this)
         setContentView(R.layout.activity_main)
         setSupportActionBar(toolbar)
-
-        replaceFragment(RecipeFragment(), getString(R.string.daily_recipe))
+        replaceFragment(RecipeFragment(), getString(R.string.todays_recipe))
 
         if (isFirstLogin()) {
             showInfoDialog()
@@ -91,9 +90,6 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
         when (item.itemId) {
             R.id.action_logout -> {
                 genomeService.logout()
@@ -107,11 +103,9 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
     }
 
     override fun onNavigationItemSelected(item: MenuItem): Boolean {
-        // Handle navigation view item clicks here.
         when (item.itemId) {
             R.id.nav_recipes -> {
-                // Handle the camera action
-                replaceFragment(RecipeFragment(), getString(R.string.daily_recipe))
+                replaceFragment(RecipeFragment(), getString(R.string.todays_recipe))
             }
             R.id.nav_favorites -> {
                 replaceFragment(FavoritesFragment(), getString(R.string.favorites))
@@ -120,11 +114,9 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
                 replaceFragment(GenomeFragment(), getString(R.string.your_genome))
             }
             R.id.nav_share -> {
-                // TODO: implement
                 Toast.makeText(applicationContext, getString(R.string.coming_soon), Toast.LENGTH_SHORT).show()
             }
             R.id.nav_settings -> {
-                // TODO: implement
                 Toast.makeText(applicationContext, getString(R.string.coming_soon), Toast.LENGTH_SHORT).show()
             }
         }

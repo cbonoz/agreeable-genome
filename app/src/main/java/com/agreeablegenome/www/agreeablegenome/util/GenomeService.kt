@@ -1,10 +1,6 @@
 package com.agreeablegenome.www.agreeablegenome.util
 
-import java.util.*
-
-import android.app.Activity
-import android.util.DisplayMetrics
-import com.bumptech.glide.Glide.init
+import com.agreeablegenome.www.agreeablegenome.BuildConfig
 import java.util.*
 
 class GenomeService(private val prefManager: PrefManager) {
@@ -12,7 +8,17 @@ class GenomeService(private val prefManager: PrefManager) {
     val random = Random()
 
     fun getReportUrl(item: String): String {
-        return "${BASE_URL}/reports/${item}?population=${POPULATION}"
+        return "${GENOME_URL}/reports/${item}?population=${POPULATION}"
+    }
+
+    fun getRecipeUrl(item: String?): String {
+        val query: String
+        if (item != null) {
+            query = item
+        } else {
+            query = ""
+        }
+        return "${EDAMUM_URL}?q=${query}&app_id=${BuildConfig.EdamamAppId}&app_key=${BuildConfig.EdamamApiKey}"
     }
 
     fun rand(from: Int, to: Int): Int {
@@ -53,7 +59,8 @@ class GenomeService(private val prefManager: PrefManager) {
             "lean-body-mass",
             "body-fat-mass",
             "bmi",
-            "weight")
+            "weight"
+    )
 
     fun getRandomGenomeItem(): String {
         val num = rand(0, genomeItems.size)
@@ -77,13 +84,19 @@ class GenomeService(private val prefManager: PrefManager) {
         prefManager.saveString("token", token)
     }
 
+    fun getToken(): String? {
+        return prefManager.getString("token", null)
+    }
+
     fun logout() {
         prefManager.saveBoolean("firstLogin", true)
         setToken(null)
     }
 
     companion object {
-        val BASE_URL = "https://genomelink.io/v1"
+        val GENOME_URL = "https://genomelink.io/v1"
+        val EDAMUM_URL = "https://api.edamam.com/search"
+        val EXAMPLE_EDAMUM_URL = "https://api.edamam.com/search?q=chicken&app_id=${BuildConfig.EdamamAppId}&app_key=${BuildConfig.EdamamApiKey}&from=0&to=3&calories=591-722&health=alcohol-free"
         val POPULATION = "european"
     }
 

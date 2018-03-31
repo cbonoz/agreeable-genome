@@ -57,7 +57,6 @@ class LoginActivity : Activity() {
     fun startMainActivity() {
         val token = genomeService.getRandomTestToken()
         genomeService.setToken(token)
-        FuelManager.instance.baseHeaders = mapOf("Authorization" to "Bearer ${token}")
         intent = Intent(this, MainActivity::class.java)
         startActivity(intent)
 

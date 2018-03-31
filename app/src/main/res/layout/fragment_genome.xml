@@ -24,4 +24,28 @@
             android:background="@color/primary"/>
 
     <!--Radar Chart of Genome characteristics-->
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.6"
+            android:gravity="center"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="MEAL BREAKDOWN"
+            android:id="@+id/textView"/>
+
+    <com.github.mikephil.charting.charts.RadarChart
+            android:id="@+id/chart1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2" />
+
+    <Button
+            android:id="@+id/genomeButton"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_margin="25dp"
+            android:textSize="@dimen/med_text"
+            android:padding="10dp"
+            android:text="@string/open_genome_info"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"/>
 </LinearLayout>

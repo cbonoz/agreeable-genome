@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
           package="com.agreeablegenome.www.agreeablegenome">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
             android:name=".GenomeApplication"
             android:icon="@drawable/genome_icon"

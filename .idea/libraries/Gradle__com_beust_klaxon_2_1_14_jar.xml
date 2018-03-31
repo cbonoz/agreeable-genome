@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: com.beust:klaxon:2.1.14@jar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.beust/klaxon/2.1.14/bdb36ecae08a45beee79f1ea6e1825e32f12a887/klaxon-2.1.14.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.beust/klaxon/2.1.14/ba370973e83041c952e9cb2850f666b7e111d052/klaxon-2.1.14-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
