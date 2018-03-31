@@ -23,12 +23,4 @@
             app:headerLayout="@layout/nav_header_main"
             app:menu="@menu/activity_main_drawer"/>
 
-    <!--50dp margin for header space-->
-    <FrameLayout
-            xmlns:android="http://schemas.android.com/apk/res/android"
-            android:layout_marginTop="50dp"
-            android:id="@+id/container"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"/>
-
 </android.support.v4.widget.DrawerLayout>

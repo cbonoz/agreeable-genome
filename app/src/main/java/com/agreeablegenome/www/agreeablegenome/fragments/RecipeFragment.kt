@@ -10,6 +10,8 @@ import com.agreeablegenome.www.agreeablegenome.GenomeApplication
 
 import com.agreeablegenome.www.agreeablegenome.R
 import com.agreeablegenome.www.agreeablegenome.util.GenomeService
+import com.github.kittinunf.fuel.httpGet
+import com.github.kittinunf.result.Result
 import javax.inject.Inject
 
 class RecipeFragment : Fragment() {
@@ -30,6 +32,20 @@ class RecipeFragment : Fragment() {
     }
 
     private fun getTodaysRecipe() {
+        genomeService.getReportUrl(genomeService.getRandomGenomeItem()).httpGet().responseString { request, response, result ->
+            //do something with response
+            when (result) {
+                is Result.Failure -> {
+                    val ex = result.getException()
+                }
+                is Result.Success -> {
+                    val data = result.get()
+                    Log.
+                }
+            }
+        }
+
+
     }
 
 

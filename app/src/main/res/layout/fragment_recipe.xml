@@ -11,4 +11,10 @@
             android:layout_height="match_parent"
             android:text="@string/hello_blank_fragment"/>
 
+    <ImageView
+            android:id="@+id/recipeImage"
+            android:contentDescription="Today's Recipe"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:src="@drawable/genome_logo_trans"/>
+
 </FrameLayout>

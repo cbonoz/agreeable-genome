@@ -10,6 +10,7 @@ import android.widget.Toast
 import com.agreeablegenome.www.agreeablegenome.GenomeApplication
 import com.agreeablegenome.www.agreeablegenome.R
 import com.agreeablegenome.www.agreeablegenome.util.GenomeService
+import com.github.kittinunf.fuel.core.FuelManager
 import io.github.tonnyl.spark.Spark
 import kotlinx.android.synthetic.main.activity_login.*
 import javax.inject.Inject
@@ -54,7 +55,9 @@ class LoginActivity : Activity() {
     }
 
     fun startMainActivity() {
-        genomeService.setToken(genomeService.getRandomTestToken())
+        val token = genomeService.getRandomTestToken()
+        genomeService.setToken(token)
+        FuelManager.instance.baseHeaders = mapOf("Authorization" to "Bearer ${token}")
         intent = Intent(this, MainActivity::class.java)
         startActivity(intent)
 

@@ -15,18 +15,8 @@
             android:layout_marginBottom="50dp"
             android:layout_gravity="center_horizontal"
             android:contentDescription="@string/app_name"
-            android:src="@drawable/ic_launcher_background"
+            android:src="@drawable/genome_logo_trans"
             android:layout_width="wrap_content" android:layout_height="wrap_content"/>
-
-    <!-- A CardView that contains a TextView -->
-    <!--<android.support.v7.widget.CardView-->
-    <!--xmlns:card_view="http://schemas.android.com/apk/res-auto"-->
-    <!--android:id="@+id/card_view"-->
-    <!--android:layout_gravity="center"-->
-    <!--android:layout_margin="25dp"-->
-    <!--android:layout_width="match_parent"-->
-    <!--android:layout_height="200dp"-->
-    <!--card_view:cardCornerRadius="4dp">-->
 
     <FrameLayout
             android:layout_marginBottom="50dp"
