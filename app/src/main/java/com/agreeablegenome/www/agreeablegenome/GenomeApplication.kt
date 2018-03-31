@@ -15,7 +15,7 @@ class GenomeApplication : Application() {
         super.onCreate()
         Log.d("MyApplication", "onCreate")
         mInjectionComponent = DaggerInjectionComponent.builder()
-                .mathModule(GenomeModule(this))
+                .genomeModule(GenomeModule(this))
                 .build()
 
         app = this

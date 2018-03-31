@@ -7,7 +7,7 @@ import com.daimajia.androidanimations.library.Techniques
 import com.agreeablegenome.www.agreeablegenome.BuildConfig
 import com.agreeablegenome.www.agreeablegenome.GenomeApplication
 import com.agreeablegenome.www.agreeablegenome.R
-import com.agreeablegenome.www.agreeablegenome.managers.PrefManager
+import com.agreeablegenome.www.agreeablegenome.util.PrefManager
 import com.viksaa.sssplash.lib.activity.AwesomeSplash
 import com.viksaa.sssplash.lib.cnst.Flags
 import com.viksaa.sssplash.lib.model.ConfigSplash
@@ -63,9 +63,18 @@ class SplashActivity : AwesomeSplash() {
 
     override fun animationsFinished() {
         // Transit to another activity here or perform other actions.
-        val intent = Intent(this, MainActivity::class.java)
+
+        val token = prefManager.getString("token", null)
+        val intent: Intent
+        if (token != null) {
+            intent = Intent(this, MainActivity::class.java)
+        } else {
+            intent = Intent(this, LoginActivity::class.java)
+        }
+
         intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
         startActivity(intent)
+        finish()
     }
 
     companion object {

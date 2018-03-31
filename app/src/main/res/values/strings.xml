@@ -1,4 +1,21 @@
 <resources>
-    <string name="app_name">LearnPython</string>
-    <string name="slogan">Python Lessons and Frameworks</string>
+    <string name="app_name">Agreeable Genome</string>
+    <string name="slogan">Genome Friendly meals and tips</string>
+
+    <string name="description">Agreeable Genome is a daily recipe app that recommends daily meals and health tips that complement
+        your personal genome. Your genome/health info has automatically been pulled in.
+    </string>
+    <string name="title_activity_login">Login with Genome</string>
+    <string name="login">Login with Genome</string>
+    <string name="welcome_back">Welcome Back</string>
+    <string name="title_activity_main">Dashboard</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="navigation_drawer_open">Open drawer</string>
+    <string name="navigation_drawer_close">Close drawer</string>
+
+    <string name="nav_header_title">Agreeable Genome</string>
+    <string name="nav_header_subtitle"></string>
+    <string name="nav_header_desc">Navigation</string>
+    <string name="logged_out">Logged out</string>
 </resources>

@@ -1,4 +1,4 @@
-package com.agreeablegenome.www.agreeablegenome.managers
+package com.agreeablegenome.www.agreeablegenome.util
 
 import com.google.gson.Gson
 import com.google.gson.JsonParseException
@@ -6,8 +6,8 @@ import com.google.gson.JsonParseException
 import android.app.Application
 import android.content.SharedPreferences
 
-class PrefManager(app: Application, private val gson: Gson) {
 
+class PrefManager(app: Application, private val gson: Gson) {
 
     private val settings: SharedPreferences
 
@@ -23,7 +23,7 @@ class PrefManager(app: Application, private val gson: Gson) {
         editor.apply()
     }
 
-    fun saveString(location: String, value: String) {
+    fun saveString(location: String, value: String?) {
         val editor = settings.edit()
         editor.putString(location, value)
         editor.apply()

@@ -1,11 +1,6 @@
 package com.agreeablegenome.www.agreeablegenome.injection
 
-import com.agreeablegenome.www.agreeablegenome.activities.MainActivity
-import com.agreeablegenome.www.agreeablegenome.activities.SplashActivity
-import com.agreeablegenome.www.agreeablegenome.activities.QuizActivity
-import com.agreeablegenome.www.agreeablegenome.activities.StatsActivity
-import com.agreeablegenome.www.agreeablegenome.fragments.QuizFragment
-import com.agreeablegenome.www.agreeablegenome.fragments.QuizResultFragment
+import com.agreeablegenome.www.agreeablegenome.activities.*
 
 import javax.inject.Singleton
 
@@ -18,11 +13,9 @@ interface InjectionComponent {
     // Activities
     fun inject(activity: MainActivity)
     fun inject(activity: SplashActivity)
+    fun inject(activity: LoginActivity)
 
     // Fragments
-//    fun inject(fragment: QuizFragment)
-//    fun inject(fragment: QuizResultFragment)
-
 
     // Services
 

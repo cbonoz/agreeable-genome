@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:tools="http://schemas.android.com/tools"
+      tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+                android:id="@+id/nav_recipes"
+                android:icon="@drawable/zzz_food_fork_drink"
+                android:title="Import"/>
+        <item
+                android:id="@+id/nav_favorites"
+                android:icon="@drawable/zzz_star"
+                android:title="Favorites"/>
+
+        <item
+                android:id="@+id/nav_tips"
+                android:icon="@drawable/zzz_information"
+                android:title="Tools"/>
+        <item
+                android:id="@+id/nav_genome"
+                android:icon="@drawable/zzz_bulletin_board"
+                android:title="Your Genome"/>
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                    android:id="@+id/nav_settings"
+                    android:icon="@drawable/zzz_settings"
+                    android:title="Settings"/>
+            <item
+                    android:id="@+id/nav_share"
+                    android:icon="@drawable/ic_menu_share"
+                    android:title="Share"/>
+        </menu>
+    </item>
+
+</menu>
