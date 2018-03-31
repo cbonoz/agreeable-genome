@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: io.github.tonnyl:spark-0.1.0-alpha">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/spark-0.1.0-alpha.aar/59d81842472921caba7f97485a72e1ab/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/spark-0.1.0-alpha.aar/59d81842472921caba7f97485a72e1ab/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.github.tonnyl/spark/0.1.0-alpha/e6333ae6ab87a46ded2f6c187ef2b44f082b5f5/spark-0.1.0-alpha-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

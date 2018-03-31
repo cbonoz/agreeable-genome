@@ -3,9 +3,11 @@ package com.agreeablegenome.www.agreeablegenome.fragments
 
 import android.os.Bundle
 import android.support.v4.app.Fragment
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import com.agreeablegenome.www.agreeablegenome.GenomeApplication
 
 import com.agreeablegenome.www.agreeablegenome.R
@@ -37,15 +39,14 @@ class RecipeFragment : Fragment() {
             when (result) {
                 is Result.Failure -> {
                     val ex = result.getException()
+                    Toast.makeText(activity, ex.toString(), Toast.LENGTH_SHORT).show()
                 }
                 is Result.Success -> {
                     val data = result.get()
-                    Log.
+                    Log.d("recipe", data)
                 }
             }
         }
-
-
     }
 
 

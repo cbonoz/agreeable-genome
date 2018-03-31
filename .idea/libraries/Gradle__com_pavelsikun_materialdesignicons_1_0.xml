@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: com.pavelsikun:materialdesignicons-1.0">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/materialdesignicons-1.0.aar/caceb18afcb6273610e6668f6135da2a/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/materialdesignicons-1.0.aar/caceb18afcb6273610e6668f6135da2a/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.pavelsikun/materialdesignicons/1.0/2ba8f6879b88f39983f16bbc3c35510a07efaa/materialdesignicons-1.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
