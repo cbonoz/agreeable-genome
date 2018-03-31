@@ -18,6 +18,7 @@ import com.agreeablegenome.www.agreeablegenome.util.GenomeService
 import com.beust.klaxon.JsonObject
 import com.beust.klaxon.Parser
 import com.bumptech.glide.Glide
+import com.bumptech.glide.load.resource.drawable.DrawableTransitionOptions.withCrossFade
 import com.github.kittinunf.fuel.httpGet
 import com.github.kittinunf.result.Result
 import com.github.ybq.android.spinkit.SpinKitView
@@ -126,29 +127,35 @@ class RecipeFragment : Fragment() {
 
         val recipeImageUrl = recipe.string("image")
         val description = StringBuilder()
-        description.append(recipe.string("label")).append("\n")
+        val recipeTitle = recipe.string("label")
+        description.append(recipeTitle).append("\n")
         description.append("Source: ").append(recipe.string("source")).append("\n")
         description.append("Calories: ").append(recipe.float("Calories")).append("\n")
         recipeText.text = description.toString()
 
-        val fullDescription = StringBuilder()
+        val dialogRecipeDescription = StringBuilder()
         for (key in recipe.keys) {
             val value = recipe.get(key).toString()
-            if (!value.contains("www")) {
-                fullDescription.append(key).append(": ").append(value).append("\n")
+            // Filter out urls and data arrays.
+            if (!value.contains("www") && !value.contains("Array")) {
+                dialogRecipeDescription.append(key).append(": ").append(value).append("\n")
             }
         }
 
         Glide.with(this)
                 .load(recipeImageUrl)
+                .transition(withCrossFade())
                 .into(recipeImage);
 
         recipeImage.setOnClickListener {
-            MaterialDialog.Builder(this@RecipeFragment.context!!)
-                    .title("Today's Recipe")
-                    .content(fullDescription.toString())
+            val context = this@RecipeFragment.context!!
+            MaterialDialog.Builder(context)
+                    .title("Recipe: ${recipeTitle}")
+                    .content(dialogRecipeDescription.toString())
                     .positiveText("I made this")
-                    .negativeText("Skip")
+                    .onPositive { dialog, which ->
+                        Toast.makeText(context, "Recorded Meal", Toast.LENGTH_SHORT).show()
+                    }
                     .icon(resources.getDrawable(R.drawable.zzz_food))
                     .show()
         }

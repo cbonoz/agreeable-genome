@@ -38,6 +38,7 @@
                 android:layout_gravity="center"
                 app:SpinKit_Color="@color/md_grey_800"/>
 
+        <!--TODO: make variable width/height-->
         <ImageView
                 android:id="@+id/recipeImage"
                 android:contentDescription="@string/todays_recipe"
