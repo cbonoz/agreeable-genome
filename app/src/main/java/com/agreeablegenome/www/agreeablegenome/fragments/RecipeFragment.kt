@@ -124,8 +124,9 @@ class RecipeFragment : Fragment() {
             recipeText.text = getString(R.string.no_recipe_found)
             return
         }
-        // Take the first recipe result from the search.
-        val recipe = hits.get(0).get("recipe") as JsonObject
+        // Take a new recipe result from the search.
+        val num = genomeService.rand(0, hits.size - 1)
+        val recipe = hits.get(num).get("recipe") as JsonObject
 
         val recipeImageUrl = recipe.string("image")
         val description = StringBuilder()
