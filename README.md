@@ -31,21 +31,21 @@ https://docs.google.com/presentation/d/16EUqJsdWubQcpF0FHXg9JK_0yrnByLmPfOG61lP3
 
 ### Screenshots
 
-<div style="text-align:center">
+<div width="400" style="text-align:center">
     <h3>Login Page</h3>
-        <img src="./assets/login.png" style="width: 400px; margin: 0 auto"/>
+        <img src="./assets/login.png" width="400" style="margin: 0 auto"/>
     <h3>Loading...</h3>
-        <img src="./assets/login_loading.png" style="width: 400px; margin: 0 auto"/>
+        <img src="./assets/login_loading.png" width="400" style="margin: 0 auto"/>
     <h3>Welcome Dialog</h3>
-        <img src="./assets/welcome.png" style="width: 400px; margin: 0 auto"/>
+        <img src="./assets/welcome.png" width="400" style="margin: 0 auto"/>
     <h3>Main Recipe Page</h3>
-        <img src="./assets/recipe.png" style="width: 400px; margin: 0 auto"/>
+        <img src="./assets/recipe.png" width="400" style="margin: 0 auto"/>
     <h3>Basic Recipe Info Page</h3>
-        <img src="./assets/recipe_detail.png" style="width: 400px; margin: 0 auto"/>
+        <img src="./assets/recipe_detail.png" width="400" style="margin: 0 auto"/>
     <h3>Favorites</h3>
-        <img src="./assets/favorites.png" style="width: 400px; margin: 0 auto"/>
+        <img src="./assets/favorites.png" width="400" style="margin: 0 auto"/>
     <h3>Your Genome History</h3>
-        <img src="./assets/history.png" style="width: 400px; margin: 0 auto"/>
+        <img src="./assets/history.png" width="400" style="margin: 0 auto"/>
 </div>
 
 ### Next Work
